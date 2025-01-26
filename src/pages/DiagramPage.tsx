@@ -81,7 +81,7 @@ const DiagramPage = () => {
   }, [contextMenu, users, removeUserFromTeam]);
 
   useEffect(() => {
-    // Create team nodes
+  
     const teamNodes = teams.map((team, index) => ({
       id: team.id,
       type: 'team',
@@ -92,9 +92,8 @@ const DiagramPage = () => {
       },
     }));
 
-    // Create user nodes and connect them to their teams
     const userNodes = users
-      .filter(user => user.isActive && (expandedTeams.has(user.teamId) || !user.teamId)) // Only show users of expanded teams
+      .filter(user => user.isActive && (expandedTeams.has(user.teamId) || !user.teamId)) 
       .map((user, index) => ({
         id: user.id,
         type: 'user',
@@ -108,7 +107,6 @@ const DiagramPage = () => {
         },
       }));
 
-    // Create edges between teams and their users
     const edges = users
       .filter(user => user.isActive && user.teamId && expandedTeams.has(user.teamId))
       .map(user => ({
@@ -140,7 +138,6 @@ const DiagramPage = () => {
       >
         <Background color="#1e293b" gap={16} />
         
-        {/* Custom Controls */}
         <Panel position="bottom-right">
           <Paper
             sx={{
@@ -177,7 +174,6 @@ const DiagramPage = () => {
           </Paper>
         </Panel>
 
-        {/* Info Panel */}
         {showHelp && (
           <Panel position="top-left">
             <Paper
@@ -215,8 +211,7 @@ const DiagramPage = () => {
           </Panel>
         )}
 
-        {/* Context Menu */}
-        <Menu
+ü        <Menu
           open={contextMenu !== null}
           onClose={handleCloseContextMenu}
           anchorReference="anchorPosition"

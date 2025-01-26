@@ -111,7 +111,6 @@ export const HomePage = () => {
 
   return (
     <Box sx={{ position: 'relative' }}>
-      {/* Background Gradients */}
       <Box
         sx={{
           position: 'fixed',
@@ -156,7 +155,6 @@ export const HomePage = () => {
           Team Management Dashboard
         </Typography>
 
-        {/* Statistics Section */}
         <Grid container spacing={3} sx={{ mb: 4 }}>
           {getTeamStats().map((stat, index) => (
             <Grid item xs={12} sm={6} md={3} key={index}>
@@ -228,7 +226,6 @@ export const HomePage = () => {
         </Grid>
 
         <Grid container spacing={4}>
-          {/* Team Management Section */}
           <Grid item xs={12} md={6}>
             <Paper 
               sx={{ 
@@ -417,8 +414,6 @@ export const HomePage = () => {
               </Stack>
             </Paper>
           </Grid>
-
-          {/* User Management Section */}
           <Grid item xs={12} md={6}>
             <Paper 
               sx={{ 

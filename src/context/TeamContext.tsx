@@ -67,7 +67,6 @@ export const TeamProvider: React.FC<{ children: React.ReactNode }> = ({ children
 
   const removeTeam = (teamId: string) => {
     setTeams(prev => prev.filter(team => team.id !== teamId));
-    // Also remove all users from this team
     setUsers(prev => prev.map(user => 
       user.teamId === teamId ? { ...user, teamId: '' } : user
     ));
@@ -81,7 +80,6 @@ export const TeamProvider: React.FC<{ children: React.ReactNode }> = ({ children
           : user
       )
     );
-    // Save to localStorage immediately
     localStorage.setItem(STORAGE_KEY, JSON.stringify({ teams, users: users.map(user =>
       user.id === userId && user.teamId === teamId
         ? { ...user, teamId: '' }
