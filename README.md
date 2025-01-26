@@ -116,7 +116,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 👥 Authors
 
-- **Your Name** - *Initial Developer* - [GitHub](https://github.com/rkymtc)
+- *Initial Developer* - [GitHub](https://github.com/rkymtc)
 
 ## 🙏 Acknowledgments
 
