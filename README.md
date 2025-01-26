@@ -36,31 +36,29 @@ A modern team management application that allows you to manage teams and users, 
 
 ## 📦 Installation
 
-1. Clone the repository:
-   ```bash
+1. Clone the repository:  
+```bash
    git clone https://github.com/rkymtc/react-flow.git
    cd react-flow
-
+```
 2. Install dependencies:
 ```bash
 npm install
 # or
 yarn install
-
+```
 
 3. Start the development server:
 ```bash
 npm run dev
 # or
 yarn dev
-
+```
 
 4. Open in your browser:
 ```bash
 http://localhost:3000
-
-
-
+```
 
 ## 🎨 UI/UX Features
 
