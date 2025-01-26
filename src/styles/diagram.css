@@ -1,0 +1,79 @@
+.react-flow__node {
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: all 0.2s ease;
+  cursor: pointer !important;
+}
+
+.react-flow__node:hover {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.react-flow__handle {
+  width: 8px !important;
+  height: 8px !important;
+  background-color: '#171717' !important;
+  border: 2px solid currentColor !important;
+}
+
+.react-flow__handle-left {
+  left: -4px !important;
+}
+
+.react-flow__handle-right {
+  right: -4px !important;
+}
+
+.react-flow__edge-path {
+  stroke: #3b82f6 !important;
+  stroke-width: 2 !important;
+}
+
+.react-flow__controls {
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1) !important;
+  border-radius: 8px !important;
+  overflow: hidden !important;
+  background-color: '#171717' !important;
+  border: 1px solid #1e293b !important;
+}
+
+.react-flow__controls-button {
+  border: none !important;
+  border-bottom: 1px solid #1e293b !important;
+  background-color: transparent !important;
+  padding: 8px !important;
+}
+
+.react-flow__controls-button:hover {
+  background-color: rgba(59, 130, 246, 0.08) !important;
+}
+
+.react-flow__controls-button svg {
+  fill: #94a3b8 !important;
+  width: 16px !important;
+  height: 16px !important;
+}
+
+.react-flow__background {
+  background-color: '#171717' !important;
+}
+
+.react-flow__edge.selected .react-flow__edge-path {
+  stroke-width: 3 !important;
+}
+
+.react-flow__edge.animated .react-flow__edge-path {
+  stroke-dasharray: 5,5 !important;
+  animation: dashdraw 1s linear infinite !important;
+}
+
+.react-flow__attribution {
+  background: transparent !important;
+  color: #94a3b8 !important;
+}
+
+@keyframes dashdraw {
+  from {
+    stroke-dashoffset: 10;
+  }
+} 
