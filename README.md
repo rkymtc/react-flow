@@ -37,10 +37,9 @@ A modern team management application that allows you to manage teams and users, 
 ## 📦 Installation
 
 1. Clone the repository:
-\`\`\`bash
-git clone https://github.com/rkymtc/react-flow.git
-cd react-flow
-\`\`\`
+   ```bash
+   git clone https://github.com/rkymtc/react-flow.git
+   cd react-flow
 
 2. Install dependencies:
 \`\`\`bash
