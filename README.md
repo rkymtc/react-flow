@@ -42,23 +42,23 @@ A modern team management application that allows you to manage teams and users, 
    cd react-flow
 
 2. Install dependencies:
-\`\`\`bash
+```bash
 npm install
 # or
 yarn install
-\`\`\`
+
 
 3. Start the development server:
-\`\`\`bash
+```bash
 npm run dev
 # or
 yarn dev
-\`\`\`
+
 
 4. Open in your browser:
-\`\`\`
+```bash
 http://localhost:3000
-\`\`\`
+
 
 
 
