@@ -38,8 +38,8 @@ A modern team management application that allows you to manage teams and users, 
 
 1. Clone the repository:
 \`\`\`bash
-git clone https://github.com/username/team-management.git
-cd team-management
+git clone https://github.com/rkymtc/react-flow.git
+cd react-flow
 \`\`\`
 
 2. Install dependencies:
@@ -58,23 +58,10 @@ yarn dev
 
 4. Open in your browser:
 \`\`\`
-http://localhost:5173
+http://localhost:3000
 \`\`\`
 
-## 📁 Project Structure
 
-\`\`\`
-src/
-├── components/         # Reusable components
-│   ├── common/        # Common UI components
-│   ├── diagrams/      # Diagram components
-│   └── forms/         # Form components
-├── context/           # Context definitions
-├── pages/             # Page components
-├── styles/            # Global styles
-├── types/             # TypeScript types
-└── main.tsx          # Entry point
-\`\`\`
 
 ## 🎨 UI/UX Features
 
@@ -132,7 +119,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 👥 Authors
 
-- **Your Name** - *Initial Developer* - [GitHub](https://github.com/username)
+- **Your Name** - *Initial Developer* - [GitHub](https://github.com/rkymtc)
 
 ## 🙏 Acknowledgments
 
