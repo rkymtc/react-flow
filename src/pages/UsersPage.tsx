@@ -28,14 +28,10 @@ import {
   Person as PersonIcon,
 } from '@mui/icons-material';
 import { useTeam } from '../context/TeamContext';
+import { UserFormData } from '../types/team';
 
-interface UserDialogData {
-  name: string;
-  role: string;
-  teamId: string;
-}
 
-const initialDialogData: UserDialogData = {
+const initialDialogData: UserFormData = {
   name: '',
   role: '',
   teamId: '',
@@ -44,7 +40,7 @@ const initialDialogData: UserDialogData = {
 export const UsersPage = () => {
   const { users, teams, addUser, updateUser, removeUserFromTeam, toggleUserStatus, deleteUser } = useTeam();
   const [dialogOpen, setDialogOpen] = useState(false);
-  const [dialogData, setDialogData] = useState<UserDialogData>(initialDialogData);
+  const [dialogData, setDialogData] = useState<UserFormData>(initialDialogData);
   const [editingUserId, setEditingUserId] = useState<string | null>(null);
 
   const handleOpenDialog = (userId?: string) => {

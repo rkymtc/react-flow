@@ -1,6 +1,6 @@
 import React from 'react';
 import { Handle, Position } from 'reactflow';
-import { NodeProps } from '../../types';
+import { NodeProps } from '../../types/team';
 
 
 export const DiagramNode: React.FC<NodeProps> = ({ data, type }) => (

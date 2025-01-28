@@ -1,15 +1,16 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
-import { zodResolver } from '@hookform/resolvers/zod';
 import { TextField, Button, Box } from '@mui/material';
 import { useTeamOperations } from '../../hooks/useTeamOperations';
-import { teamSchema, TeamFormData } from '../../schemas/teamSchemas';
+
+interface TeamFormData {
+  name: string;
+  description?: string;
+}
 
 export const TeamForm = () => {
   const { handleAddTeam } = useTeamOperations();
-  const { register, handleSubmit, reset, formState: { errors } } = useForm<TeamFormData>({
-    resolver: zodResolver(teamSchema)
-  });
+  const { register, handleSubmit, reset, formState: { errors } } = useForm<TeamFormData>();
 
   const onSubmit = (data: TeamFormData) => {
     handleAddTeam(data);
@@ -41,4 +42,4 @@ export const TeamForm = () => {
       <Button type="submit" variant="contained">Add Team</Button>
     </Box>
   );
-}; 
+};

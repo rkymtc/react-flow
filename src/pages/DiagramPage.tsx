@@ -6,7 +6,6 @@ import ReactFlow, {
   useEdgesState,
   ConnectionMode,
   Node,
-  Edge,
   Panel,
 } from 'reactflow';
 import { Box, Paper, Typography, IconButton, Tooltip, Stack, Divider, Menu, MenuItem } from '@mui/material';

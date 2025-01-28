@@ -28,18 +28,8 @@ import {
 } from '@mui/icons-material';
 import { useTeam } from '../context/TeamContext';
 import { NoData } from '../components/common/NoData';
-import type { User } from '../context/TeamContext';
+import { TeamFormData, User, UserFormData } from '../types/team';
 
-interface TeamFormData {
-  name: string;
-  description: string;
-}
-
-interface UserFormData {
-  name: string;
-  role: string;
-  teamId: string;
-}
 
 const initialTeamData: TeamFormData = {
   name: '',

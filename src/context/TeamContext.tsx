@@ -1,35 +1,7 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
-
-export interface Team {
-  id: string;
-  name: string;
-  description: string;
-}
-
-export interface User {
-  id: string;
-  name: string;
-  role: string;
-  teamId: string;
-  isActive: boolean;
-}
-
-interface TeamContextType {
-  teams: Team[];
-  users: User[];
-  addTeam: (team: Team) => void;
-  addUser: (user: User) => void;
-  updateUser: (userId: string, updatedUser: Partial<User>) => void;
-  removeTeam: (teamId: string) => void;
-  removeUserFromTeam: (userId: string, teamId: string) => void;
-  deleteUser: (userId: string) => void;
-  toggleUserStatus: (userId: string) => void;
-}
-
+import { Team, TeamContextType, User } from '../types/team';
 const TeamContext = createContext<TeamContextType | undefined>(undefined);
-
 const STORAGE_KEY = 'teamManagement';
-
 const getStoredData = () => {
   const stored = localStorage.getItem(STORAGE_KEY);
   if (stored) {
